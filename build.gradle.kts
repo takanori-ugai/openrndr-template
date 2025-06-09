@@ -311,22 +311,22 @@ class Openrndr {
 val openrndr = Openrndr()
 
 if (properties["openrndr.tasks"] == "true") {
-    task("create executable jar for $applicationMainClass") {
+    tasks.register("create executable jar for $applicationMainClass") {
         group = " \uD83E\uDD8C OPENRNDR"
         dependsOn("shadowJar")
     }
 
-    task("run $applicationMainClass") {
+    tasks.register("run $applicationMainClass") {
         group = " \uD83E\uDD8C OPENRNDR"
         dependsOn("run")
     }
 
-    task("create standalone executable for $applicationMainClass") {
+    tasks.register("create standalone executable for $applicationMainClass") {
         group = " \uD83E\uDD8C OPENRNDR"
         dependsOn("jpackageZip")
     }
 
-    task("add IDE file scopes") {
+    tasks.register("add IDE file scopes") {
         group = " \uD83E\uDD8C OPENRNDR"
         val scopesFolder = File("${project.projectDir}/.idea/scopes")
         scopesFolder.mkdirs()
