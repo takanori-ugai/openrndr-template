@@ -6,7 +6,7 @@ orml = "0.4.1"
 
 slf4j = "2.0.17"
 log4j = "2.24.3"
-jackson = "2.19.0"
+jackson = "2.19.1"
 
 [libraries]
 kotlin-script-runtime = { group = "org.jetbrains.kotlin", name = "kotlin-script-runtime", version.ref = "kotlin" }
