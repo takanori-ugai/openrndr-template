@@ -1,6 +1,7 @@
 import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
 import org.gradle.internal.os.OperatingSystem
 import org.gradle.nativeplatform.platform.internal.DefaultNativePlatform
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 group = "org.openrndr.template"
@@ -142,8 +143,9 @@ java {
     sourceCompatibility = JavaVersion.VERSION_11
     targetCompatibility = JavaVersion.VERSION_11
 }
-tasks.withType<KotlinCompile> {
-    kotlinOptions.jvmTarget = "11"
+
+tasks.compileKotlin {
+    compilerOptions.jvmTarget = JvmTarget.JVM_11
 }
 
 // ------------------------------------------------------------------------------------------------------------------ //
