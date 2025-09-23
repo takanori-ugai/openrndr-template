@@ -5,7 +5,7 @@ orx = "0.4.5"
 orml = "0.4.1"
 
 slf4j = "2.0.17"
-log4j = "2.25.1"
+log4j = "2.25.2"
 jackson = "2.20.0"
 
 [libraries]
