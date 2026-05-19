@@ -4,7 +4,7 @@ openrndr = "0.4.4"
 orx = "0.4.5"
 orml = "0.4.1"
 
-slf4j = "2.0.17"
+slf4j = "2.0.18"
 log4j = "2.26.0"
 jackson = "2.21.3"
 
