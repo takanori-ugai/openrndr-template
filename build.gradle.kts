@@ -149,11 +149,8 @@ tasks.compileKotlin {
     compilerOptions.jvmTarget = JvmTarget.JVM_17
 }
 
-// ------------------------------------------------------------------------------------------------------------------ //
-
-project.setProperty("mainClassName", applicationMainClass)
-
 application {
+    mainClass.set(applicationMainClass)
     if (hasProperty("openrndr.application")) {
         mainClass.set("${property("openrndr.application")}")
     }
