@@ -31,4 +31,4 @@ kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 shadow = { id = "com.gradleup.shadow", version = "9.6.1" }
 runtime = { id = "org.beryx.runtime", version = "2.0.1" }
 gitarchive-tomarkdown = { id = "org.openrndr.extra.gitarchiver.tomarkdown", version.ref = "orx" }
-versions = { id = "com.github.ben-manes.versions", version = "0.58.0" }
+versions = { id = "com.github.ben-manes.versions", version = "0.60.0" }
