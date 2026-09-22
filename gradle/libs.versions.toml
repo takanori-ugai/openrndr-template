@@ -1,7 +1,7 @@
 [versions]
 kotlin = "2.4.20"
 openrndr = "0.4.4"
-orx = "0.4.5"
+orx = "0.5.0"
 orml = "0.4.1"
 
 slf4j = "2.0.19"
